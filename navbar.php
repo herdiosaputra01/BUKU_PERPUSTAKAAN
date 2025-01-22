@@ -13,6 +13,9 @@
           <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/tabel-data/index.php">Data Buku</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/tabel-katagori/index.php">Data Katagori Buku</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/ubah-password.php">Ubah Password</a>
         </li>
         <li class="nav-item">

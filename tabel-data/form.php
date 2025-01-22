@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Mahasiswa</title>
+    <title>Data Buku</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/all.css">
 </head>
@@ -17,40 +17,30 @@
         <div class="col-8 m-auto">
             <div class="card">
             <div class="card-header">
-                <h3 class="float-start">Form Data Mahasiswa</h3>
+                <h3 class="float-start">Form Data Buku</h3>
                 
             </div>
             <div class="card-body">
             <form action="proses.php" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">NIM</label>
+                    <label for="exampleInputEmail1" class="form-label">Id Buku</label>
                     <input type="text" name="nim" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nama Mahasiswa</label>
+                    <label for="exampleInputPassword1" class="form-label">Judul Buku</label>
                     <input type="text" name="nama" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Tempat lahir</label>
+                    <label for="exampleInputPassword1" class="form-label">Penulis</label>
                     <input type="text" name="tempat" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Tanggal Lahir</label>
+                    <label for="exampleInputPassword1" class="form-label">Id Katagori</label>
                     <input type="date" name="tanggal" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Alamat</label>
+                    <label for="exampleInputPassword1" class="form-label">Cover Buku</label>
                     <input type="text" name="alamat" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Jenis Kelamin</label>
-                    <br>
-                    <input type="radio" name="jk" value="L" class="" id="exampleInputPassword1"> Laki Laki
-                    <input type="radio" name="jk" value="P" class="" id="exampleInputPassword1"> Perempuan
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Jurusan</label>
