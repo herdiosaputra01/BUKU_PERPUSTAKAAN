@@ -25,10 +25,8 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
-                        <th scope="col">Id buku</th>
                         <th scope="col">Judul Buku</th>
                         <th scope="col">Penulis</th>
-                        <th scope="col">Id Katagori</th>
                         <th scope="col">Cover Buku</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -50,10 +48,8 @@
                                 ?>
                     <tr>
                         <th scope="row"><?=$nomor++?></th>
-                        <td><?=$data['id_buku']?></td>
                         <td><?=$data['judul_buku']?></td>
                         <td><?=$data['penulis']?></td>
-                        <td><?=$data['id_katagori']?></td>
                         <td><?=$data['cover_buku']?></td>
                         <td>
 
