@@ -3,11 +3,10 @@
 include("../koneksi.php");
 
 #2. mengambil value dari form
-$kd = $_POST['kode'];
-$jrs = $_POST['jurusan'];
+$nk = $_POST['katagori'];
 
 #3. menulis query
-$simpan = "INSERT INTO jurusans (kode,jurusan) VALUES ('$kd','$jrs')";
+$simpan = "INSERT INTO katagoris ( nama_katagori) VALUES (' $katagori')";
 
 #4. jalankan query
 $proses = mysqli_query($koneksi, $simpan);

@@ -27,7 +27,6 @@
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
-                                    <th scope="col">Id Katagori</th>
                                     <th scope="col">Nama Katagori</th>
                                     <th scope="col">Action</th>
                                 </tr>
@@ -38,7 +37,7 @@
                                 include("../koneksi.php");
 
                                 #2. menulis query
-                                $tampil = "SELECT * FROM katagori_bukus";
+                                $tampil = "SELECT * FROM katagoris";
 
                                 #3. jalankan query
                                 $proses = mysqli_query($koneksi, $tampil);
@@ -49,7 +48,6 @@
                                 ?>
                                     <tr>
                                         <th scope="row"><?= $nomor++ ?></th>
-                                        <td><?= $data['id_katagori'] ?></td>
                                         <td><?= $data['nama_katagori'] ?></td>
                                         <td>
                                             <a class="btn btn-primary btn-sm" href="edit.php?id=<?= $data['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
