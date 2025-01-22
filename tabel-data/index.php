@@ -51,7 +51,7 @@
                         <th scope="row"><?=$nomor++?></th>
                         <td><?=$data['judul_buku']?></td>
                         <td><?=$data['penulis']?></td>
-                        <td><?=$data['katagori']?></td>
+                        <td><?=$data['id_katagori']?></td>
                         <td><?=$data['cover_buku']?></td>
                         <td>
 
@@ -82,7 +82,9 @@
                             </div>
                             </div>
                         </td>
+                        
                     </tr>
+                    
                     <?php
                     }
                     ?>

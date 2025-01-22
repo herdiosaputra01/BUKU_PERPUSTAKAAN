@@ -2,13 +2,14 @@
 #1. koneksikan file ini
 include("../koneksi.php");
 
-#2. mengambil value dari form
-$jl= $_POST['judul'];
+$jl = $_POST['judul_buku'];
 $ps = $_POST['penulis'];
-$cr = $_FILES['foto'];
+$ki = $_POST['katagori'];
+$cr = $_FILES['cover_buku']['foto'];
 
-$simpan = "INSERT INTO bukus (judul,penulis,foto) 
-VALUES ('$judul_buku','$penulis','$cover_buku')";
+
+$simpan = "INSERT INTO bukus (judul_buku, penulis, cover_buku, id_katagori) 
+          VALUES ('$judul_buku', '$penulis', '$katagori','$cover_buku')";
 
 #4. jalankan query
 $proses = mysqli_query($koneksi, $simpan);

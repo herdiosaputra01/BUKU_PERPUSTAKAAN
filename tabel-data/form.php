@@ -32,7 +32,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Katagori</label>
-                    <select name="jur" class="form-control" id="">
+                    <select name="Katagori" class="form-control" id="">
                         <option value="">-Pilih Katagori-</option>
                         <?php
                             include('../koneksi.php');
