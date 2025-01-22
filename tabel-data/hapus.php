@@ -6,7 +6,7 @@ include("../koneksi.php");
 $id = $_GET['xyz'];
 
 #3. menulis query
-$hapus = "DELETE FROM bukus WHERE nim='$id'";
+$hapus = "DELETE FROM bukus WHERE judul_buku='$judul_buku'";
 
 #4. jalankan query
 $proses = mysqli_query($koneksi, $hapus);

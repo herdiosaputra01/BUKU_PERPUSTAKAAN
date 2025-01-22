@@ -27,6 +27,7 @@
                         <th scope="col">No</th>
                         <th scope="col">Judul Buku</th>
                         <th scope="col">Penulis</th>
+                        <th scope="col">Katagori</th>
                         <th scope="col">Cover Buku</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -50,14 +51,15 @@
                         <th scope="row"><?=$nomor++?></th>
                         <td><?=$data['judul_buku']?></td>
                         <td><?=$data['penulis']?></td>
+                        <td><?=$data['katagori']?></td>
                         <td><?=$data['cover_buku']?></td>
                         <td>
 
                             <!-- TOMBOL EDIT -->
-                            <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id']?>"><i class="fa fa-pen-to-square"></i></a>
+                            <a class="btn btn-info btn-sm" href="edit.php"><i class="fa fa-pen-to-square"></i></a>
                             
                             <!-- TOMBOL HAPUS -->
-                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['nim']?>">
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus">
                             <i class="fa-solid fa-trash"></i>
                             </button>
 
@@ -70,7 +72,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Yakin data <b><?=$data['nm_mhs']?></b> ingin dihapus?
+                                    Yakin data <b><?=$data['judul_buku']?></b> ingin dihapus?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>

@@ -3,16 +3,12 @@
 include("../koneksi.php");
 
 #2. mengambil value dari form
-$id = $_POST['id'];
-$nidn = $_POST['nidn'];
-$nama = $_POST['nama'];
-$jabatan = $_POST['jabatan'];
-$email = $_POST['email'];
-$no_hp = $_POST['no_hp'];
+$jl= $_POST['judul'];
+$ps = $_POST['penulis'];
+$cr = $_FILES['foto'];
 
-#3. menulis query
-$sunting = "UPDATE dosens SET nidn='$nidn', nama='$nama', jabatan='$jabatan',
-email='$email', no_hp='$no_hp' WHERE id='$id'";
+$simpan = "INSERT INTO bukus (judul,penulis,foto) 
+VALUES ('$judul_buku','$penulis','$cover_buku')";
 
 #4. jalankan query
 $proses = mysqli_query($koneksi, $sunting);

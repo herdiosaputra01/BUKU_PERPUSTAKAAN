@@ -31,6 +31,22 @@
                     <input type="text" name="penulis" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Katagori</label>
+                    <select name="jur" class="form-control" id="">
+                        <option value="">-Pilih Katagori-</option>
+                        <?php
+                            include('../koneksi.php');
+                            $sql_kat = "SELECT * FROM katagoris";
+                            $qry_kat = mysqli_query($koneksi,$sql_kat);
+                            foreach($qry_kat as $data_kat){
+                                ?>
+                                <option value="<?=$data_kat['id']?>"><?=$data_kat['jurusan']?></option>
+                                <?php
+                            }
+                        ?>
+                    </select>
+                </div>
+                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Cover Buku</label>
                     <input type="file" accept="image/*" name="foto" class="form-control" id="exampleInputPassword1">
                 </div>
