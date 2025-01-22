@@ -10,7 +10,13 @@
           <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/index.php">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA//index.php">.</a>
+          <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/tabel-buku/index.php">Data Buku</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/ubah-password.php">Ubah Password</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/UAS_HERDIOSAPUTRA/logout.php">Log out</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
