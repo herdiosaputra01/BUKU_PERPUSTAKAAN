@@ -3,7 +3,7 @@
 include("../koneksi.php");
 
 #2. mengambil value dari form
-$ki = $_POST['katagori'];
+$katagori = $_POST['katagori'];
 
 #3. menulis query
 $simpan = "INSERT INTO katagoris (nama_katagori) VALUES ('$katagori')";

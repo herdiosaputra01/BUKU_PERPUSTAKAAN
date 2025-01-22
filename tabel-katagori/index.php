@@ -50,13 +50,13 @@
                                         <th scope="row"><?= $nomor++ ?></th>
                                         <td><?= $data['nama_katagori'] ?></td>
                                         <td>
-                                            <a class="btn btn-primary btn-sm" href="edit.php"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-primary btn-sm" href="edit.php?"><i class="fa-solid fa-pen-to-square"></i></a>
                                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus">
                                                 <i class="fa-solid fa-eraser"></i>
                                             </button>
 
                                             <!-- Modal -->
-                                            <div class="modal fade" id="hapus<?= $data['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal fade" id="hapus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
@@ -64,11 +64,11 @@
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            Yakin Data <b><?= $data['katagori'] ?></b> Ingin Dihapus?
+                                                            Yakin Data <b><?=$data['nama_katagori']?></b> Ingin Dihapus?
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                                            <a href="hapus.php?xyz=<?= $data['id'] ?>" class="btn btn-danger">Hapus</a>
+                                                            <a href="hapus.php?katagori=<?=$data['nama_katagori']?>" class="btn btn-danger">Hapus</a>
                                                         </div>
                                                     </div>
                                                 </div>

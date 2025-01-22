@@ -3,7 +3,7 @@
 include("../koneksi.php");
 
 #2. mengambil id dari tombol hapus
-$id = $_GET['xyz'];
+$judul_buku = $_GET['judul_buku'];
 
 #3. menulis query
 $hapus = "DELETE FROM bukus WHERE judul_buku='$judul_buku'";

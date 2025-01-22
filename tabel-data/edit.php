@@ -3,10 +3,10 @@
 include("../koneksi.php");
 
 #2. ambil id yang akan disunting
-$id = $_GET['id'];
+$judul_buku = $_GET['judul_buku'];
 
 #3. mengambil semua record data berdasarkan id yang dipilih
-$ambil = "SELECT * FROM bukus WHERE id='$id'";
+$ambil = "SELECT * FROM bukus WHERE judul_buku='$judul_buku'";
 
 #4. menjalankan query
 $edit = mysqli_query($koneksi,$ambil);
@@ -34,7 +34,7 @@ $data = mysqli_fetch_array($edit)
         <div class="col-8 m-auto">
             <div class="card">
             <div class="card-header">
-                <h3 class="float-start">Form Edit Data bukus</h3>
+                <h3 class="float-start">Form Edit Data buku</h3>
                 
                 </div>
             <div class="card-body">

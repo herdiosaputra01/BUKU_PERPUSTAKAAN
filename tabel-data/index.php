@@ -56,6 +56,11 @@
                         <td>
 
                             <!-- TOMBOL EDIT -->
+                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#detail">
+                            <i class="fa-solid fa-eye"></i>
+                            </button>
+
+
                             <a class="btn btn-info btn-sm" href="edit.php"><i class="fa fa-pen-to-square"></i></a>
                             
                             <!-- TOMBOL HAPUS -->
@@ -64,7 +69,7 @@
                             </button>
 
                             <!-- MODAL HAPUS-->
-                            <div class="modal fade" id="hapus<?=$data['nim']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="hapus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -76,7 +81,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                    <a href="hapus.php?xyz=<?=$data['nim']?>" class="btn btn-danger">Hapus</a>
+                                    <a href="hapus.php?xyz=<?=$data['judul_buku']?>" class="btn btn-danger">Hapus</a>
                                 </div>
                                 </div>
                             </div>
